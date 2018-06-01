@@ -1,6 +1,6 @@
 import uuid from "uuid";
-import * as dynamoDbLib from "./libs/dynamodb-lib";
-import { success, failure } from "./libs/response-lib";
+import * as dynamoDbLib from "../libs/dynamodb-lib";
+import { success, failure } from "../libs/response-lib";
 
 AWS.config.update({region:"us-east-2"});
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
