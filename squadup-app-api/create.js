@@ -5,7 +5,7 @@ import { success, failure } from "../libs/response-lib";
 AWS.config.update({region:"us-east-2"});
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
 
-export function main(event, context, callback) {
+export async function main(event, context, callback) {
   const data = JSON.parse(event.body);
 
   const params = {
